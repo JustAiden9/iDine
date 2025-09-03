@@ -16,6 +16,7 @@
 		513D22E125D16DD900C1A803 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513D22DF25D16DD900C1A803 /* Menu.swift */; };
 		513D22E425D16DEE00C1A803 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 513D22E325D16DEE00C1A803 /* menu.json */; };
 		DF31BC242E6897570076329A /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31BC232E6897570076329A /* ItemRow.swift */; };
+		DF31BC262E689A080076329A /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF31BC252E689A080076329A /* ItemDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		513D22DF25D16DD900C1A803 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		513D22E325D16DEE00C1A803 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		DF31BC232E6897570076329A /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		DF31BC252E689A080076329A /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			children = (
 				513D22CB25D16D9E00C1A803 /* iDineApp.swift */,
 				513D22CD25D16D9E00C1A803 /* ContentView.swift */,
+				DF31BC252E689A080076329A /* ItemDetail.swift */,
 				DF31BC232E6897570076329A /* ItemRow.swift */,
 				513D22DB25D16DC000C1A803 /* Helper.swift */,
 				513D22DF25D16DD900C1A803 /* Menu.swift */,
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF31BC262E689A080076329A /* ItemDetail.swift in Sources */,
 				513D22CE25D16D9E00C1A803 /* ContentView.swift in Sources */,
 				513D22CC25D16D9E00C1A803 /* iDineApp.swift in Sources */,
 				513D22E025D16DD900C1A803 /* Order.swift in Sources */,
