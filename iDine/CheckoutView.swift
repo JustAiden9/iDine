@@ -36,7 +36,7 @@ struct CheckoutView: View {
                     }
                     .pickerStyle(.segmented)
                 }
-                Section("Total: $100") {
+                Section("Total: \(totalPrice)") {
                     Button("Confirm order") {
                         // place the order
                     }
@@ -45,6 +45,12 @@ struct CheckoutView: View {
         }
         .navigationTitle("Payment")
         .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    var totalPrice: String {
+        let total = Double(order.total)
+        let tipValue = total / 100 * Double(tipAmount)
+        return (total + tipValue).formatted(.currency(code: "USD"))
     }
 }
 
