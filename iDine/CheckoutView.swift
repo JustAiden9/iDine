@@ -12,9 +12,11 @@ struct CheckoutView: View {
     @State private var addLoyaltyDetails = false
     @State private var loyaltyNumber = ""
     @State private var paymentType = "Cash"
+    @State private var pickupTime = "Now"
     @State private var tipAmount = 15
     @State private var showingPaymentAlert = false
     let paymentTypes = ["Cash", "Credit Card", "iDine Points"]
+    let pickupTimes = ["Now", "Tonight", "Tomorrow Morning", "Tomorrow Afternoon"]
     let tipAmounts = [10, 15, 20, 25, 0]
     var body: some View {
         VStack {
@@ -28,6 +30,11 @@ struct CheckoutView: View {
 
                 if addLoyaltyDetails {
                     TextField("Enter your iDine ID", text: $loyaltyNumber)
+                }
+                Picker("When do you want to pick up?", selection: $pickupTime) {
+                    ForEach(pickupTimes, id: \.self) {
+                        Text($0)
+                    }
                 }
                 Section("Add a tip?") {
                     Picker("Percentage:", selection: $tipAmount) {
